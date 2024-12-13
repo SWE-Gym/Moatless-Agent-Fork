@@ -6,7 +6,7 @@
 
 [Original README](Original_README.md)
 
-This fork is based on `a1017b7` commit of [aorwall/moatless-tools](https://github.com/aorwall/moatless-tools).
+This fork is based on `a1017b7` commit of [aorwall/moatless-tools](https://github.com/aorwall/moatless-tools). Given that the original repository has recently undergone significant code refactoring and bump to v0.0.3, we likely won't bne able to upstream the changes.
 
 To run moatless-tools agent, you need the vector index of the repos too, which we pre-computed for SWE-Gym Lite and SWE-Bench Lite. Download through [this link](https://huggingface.co/datasets/SWE-Gym/Codebase-Index-Lite).
 

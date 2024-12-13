@@ -6,9 +6,10 @@
 
 This fork is based on `a1017b7` commit of [aorwall/moatless-tools](https://github.com/aorwall/moatless-tools).
 
+To run moatless-tools agent, you need the vector index of the repos too, which we pre-computed for SWE-Gym Lite and SWE-Bench Lite. Download through [this link](https://huggingface.co/datasets/SWE-Gym/Codebase-Index-Lite).
+
 We have made the following changes to enable dramatically faster iteration speed:
 
-To run moatless-tools agent, you need the vector index of the repos too, which we pre-computed for SWE-Gym Lite and SWE-Bench Lite. Download through [this link](https://huggingface.co/datasets/SWE-Gym/Codebase-Index-Lite).
 
 ## Parallel Sampling
 Instead of running a single agent task by task, we run multiple agents in parallel, by `scripts/parallel_sample.sh`
@@ -18,3 +19,5 @@ This enables us to sample the entire SWE-Gym Lite/SWE-Bench Lite within 30 mins 
 We also evaluate patches through OpenHands Cloud Service by `scripts/eval_preds.sh`
 
 ## Parallel Vector Indexing
+
+Index your environment in parallel by `notebooks/ingest.py`
